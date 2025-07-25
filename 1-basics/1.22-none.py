@@ -1,0 +1,1 @@
+# NONE is a special data-type in Python, it represents the absence of value.
