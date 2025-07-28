@@ -1,5 +1,5 @@
 # 1. Encapsulation
-    # Binding of data and functios that manipulate data and are encapsulated into one big object (like attributes, functions and methods)
+    # Binding of data and functions that manipulate data and are encapsulated into one big object (like attributes, functions and methods)
 class PlayerChar:
     membership=True
 

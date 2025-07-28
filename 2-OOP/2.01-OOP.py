@@ -5,6 +5,11 @@
     # methods
 # our object can take
 
+# init refers to the instance of the class:
+    # player1.name 
+# cls refers to the class itself:
+    # PlayerChar.name
+
 class PlayerChar: # we use camel case, and NEVER make it plural
     membership = True # This is a CLASS OBJECT ATTRIBUTE and is static
     def __init__(self, name, age): # this is a dunder method, where self represents the class itself (PlayerChar)
@@ -12,11 +17,11 @@ class PlayerChar: # we use camel case, and NEVER make it plural
         self.age = age 
         print(f"Hi {self.name} you are {self.age} years old.")
     
-    @classmethod
+    @classmethod # takes cls as first arg, and can access and modify class state
     def adding_things(cls, num1, num2):
         return(cls("Zahra", num1 + num2))
     
-    @staticmethod
+    @staticmethod # just a regular function inside the class, it doesnt care for class or instance
     def adding_things2(*args):
         return sum(args)
     
